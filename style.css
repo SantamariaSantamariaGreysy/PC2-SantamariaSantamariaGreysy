@@ -1,0 +1,76 @@
+.alerta-4 {
+  background-color: #cc8512;
+  font-size: 26px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  border: 7px solid #c22014;
+  font-weight: bold;
+  color: #141414;
+}
+.alerta-3 {
+  background-color: #eb9c1b;
+  font-size: 22px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.alerta-2 {
+  background-color: #eeac41;
+  font-size: 18px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.alerta-1 {
+  background-color: #f2bd66;
+  font-size: 14px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.card-3 {
+  font-size: 3rem;
+  box-shadow: 5px 10px 45px rgba(38, 3, 194, 0.3);
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background-color: #f1d0c6;
+  font-family: Arial, sans-serif;
+}
+.card-2 {
+  font-size: 2rem;
+  box-shadow: 5px 10px 30px rgba(38, 3, 194, 0.3);
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background-color: #f1d0c6;
+  font-family: Arial, sans-serif;
+}
+.card-1 {
+  font-size: 1rem;
+  box-shadow: 5px 10px 15px rgba(38, 3, 194, 0.3);
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background-color: #f1d0c6;
+  font-family: Arial, sans-serif;
+}
+.tarjeta-clara {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  color: black;
+}
+.tarjeta-oscura {
+  background-color: #212121;
+  padding: 10px 20px;
+  color: white;
+}

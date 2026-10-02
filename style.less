@@ -1,0 +1,60 @@
+//Pregunta1
+//variable base
+@color-base: #f5cd8c;
+@fuente-base: 10px;
+@color-acento: #141414;
+
+// Mixin con Pensamiento Recursivo y Lógica Funcional
+.generar-alertas(@n) when (@n > 0) {
+  .alerta-@{n} {
+    background-color: darken(@color-base, @n * 8%);
+    font-size: @fuente-base + (@n * 4);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: darken(@color-acento, 20%);
+
+    & when (@n = 4) {
+      border: 7px solid #c22014;
+      font-weight: bold;
+      color: #141414;
+    }
+  }
+  // se llama a sí mismo con un valor menor
+  .generar-alertas(@n - 1);
+}
+// Ejecución del algoritmo para generar 4 niveles
+.generar-alertas(4);
+
+
+//Pregunta2
+// Mixin recursivo para generar las tarjetas
+.generar-tarjetas(@n) when (@n > 0) {
+  .card-@{n} {
+    font-size: 1rem * @n;
+    box-shadow: 5px 10px (15px * @n) rgba(38, 3, 194, 0.3);
+    // Estilos para la tarjeta
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background-color: #f1d0c6;
+    font-family: Arial, sans-serif;
+  }
+  .generar-tarjetas(@n - 1);
+}
+.generar-tarjetas(3);
+
+// pregunta3
+.tarjeta-smart(@bg) {
+  background-color: @bg;
+  padding: 10px 20px;
+  & when (lightness(@bg) > 50%) { color: black; }
+  & when (lightness(@bg) <= 50%) { color: white; }
+}
+.tarjeta-clara {.tarjeta-smart(#f5f5f5);}
+
+.tarjeta-oscura { .tarjeta-smart(#212121);}
+
+
+
